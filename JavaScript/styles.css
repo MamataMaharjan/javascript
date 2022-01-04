@@ -1,0 +1,108 @@
+html,
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /*required for full height using flex without using px*/
+}
+
+body > .container {
+  height: 100%; /*required for full height using flex without using px*/
+  display: flex;
+  flex-direction: column;
+}
+
+body > .container .header {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  align-items: center;
+  padding: 0 32px;
+}
+
+body > .container .sub-header {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    align-items: center;
+  }
+
+.form-group {
+  padding: 8px 16px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.crud-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.result-section {
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-left: 32px;
+}
+.result-section table {
+  width: 100%;
+}
+.result-section table tr th,
+.result-section table tr td {
+  text-align: center;
+}
+.result-section table tr td .btn-edit,
+.result-section table tr td .btn-delete {
+  margin-left: 8px;
+}
+
+.result-section .action-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex-auto-fit-wrapper {
+  /* it must have either all parent with 100% height or direct parent with fixed height*/
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-auto-fit-wrapper .flex-auto-fit-container {
+  flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.flex-auto-fit-wrapper
+  .flex-auto-fit-container
+  .flex-auto-fit-scrollable-content {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  min-height: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  min-width: 16px;
+}
