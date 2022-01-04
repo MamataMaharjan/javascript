@@ -20,11 +20,11 @@
         as actual person service and dom related activities -->
 
     <!-- first way: -->
-    <script src="theme.js" type='text/javascript'></script>
+    <script src="js/theme.js" type='text/javascript'></script>
     <!-- second way: defining as function that return different methods from inside (only returned function are public) -->
-    <script src="person-dom-service.js" type='text/javascript'></script>
+    <script src="js/person-dom-service.js" type='text/javascript'></script>
     <!-- third way: defining as json variable (note: all properties defined in json are public) -->
-    <script src="person-service.js" type='text/javascript'></script>
+    <script src="js/person-service.js" type='text/javascript'></script>
 
 </head>
 
@@ -38,7 +38,7 @@
                 <div class="flex-auto-fit-wrapper">
                     <div class="flex-auto-fit-container section-wrapper">
                         <div class="sub-header">
-                            <h3 id="formHeaderTitle"></h3>
+                            <h4 id="formHeaderTitle"></h4>
                         </div>
                         
                         <form id="person-form">
@@ -83,7 +83,7 @@
                 <div class="flex-auto-fit-wrapper">
                     <div class="flex-auto-fit-container section-wrapper">
                         <div class="sub-header">
-                            <h5 id="listHeaderTitle"></h5>
+                            <h4 id="listHeaderTitle"></h4>
                             <span class="flex-spacer"></span>
                             <button id="btnSave" onclick="personService.clearData()">Clear Data</button>
                         </div>
